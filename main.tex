@@ -23,16 +23,6 @@
 
 
 %---------- FONT OPTIONS ----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -167,7 +157,7 @@
         
         \textbf{Languages:}{ C, Python, BashShell, MATLAB, Rush} \\ \vspace{3pt}
         
-        \textbf{Technologies:}{ ACPI, IPMI, UEFI, SMBIOS, EDK2, BMC, Git, Docker, Jenkins} \\ \vspace{3pt}
+        \textbf{Technologies:}{ ARMv8-A, RISC-V, ACPI, IPMI, UEFI, SMBIOS, EDK2, BMC, Git, Docker, Jenkins} \\ \vspace{3pt}
         
     }}
   \resumeSubHeadingListEnd
@@ -181,78 +171,59 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Avikon}{Istanbul, Turkey}
-      {Software Engineer}{Dec 2023 \textbf{--} Present, Full-time}
+      {Ampere Computing}{Raleigh, North Carolina, United States (Remotely)}
+      {Firmware Engineer}{April 2022 \textbf{--} Present, Full-time}
         \resumeItemListStart
-            \resumeItem{Designed a Qt-based chat application utilizing TCP for real-time communication within a client-server architecture, demonstrating expertise in socket programming, data serialization, and message routing.}
-            \resumeItem{Utilized IDL to define message types and designed a data-centric publish-subscribe architecture with OpenDDS. Implemented various QoS policies to facilitate the transmission of both volatile and persistent data.}
+            \resumeItem{Design, develop, test, and maintain firmware, bootloaders, device driver and manageablity solutions, features, and quality.
+            Optimize firmware solutions. Upstream source code to open source communities and development partners}
+            \resumeItemListStart
+              \resumeItem{Bring-up EDK2 in AmpereOne™ Family}
+              \resumeItem{Apply industry standard: Standalone MM, MPAM, IPMI, ACPI, SMBIOS}
+              \resumeItem{Enabling third party drivers in Ampere EDK2: ASPEED GOP, ethernet card}
+              \resumeItem{Develop the signature Ampere's features}
+              \resumeItem{Enhance Ampere EDK2 to map with customers requirement.}
+            \resumeItemListEnd
         \resumeItemListEnd
+    \vspace{7pt}
 
     \resumeSubheading
-      {SemperTech}{Istanbul, Turkey}
-      {Software Engineer}{Sep 2023 \textbf{--} Dec 2023, Full-time}
+      {Ampere Computing}{Ho Chi Minh, Vietnam (Onsite)}
+      {Platform Firmware Engineer}{April 2020 \textbf{--} April 2022, Full-time}
         \resumeItemListStart
-            \resumeItem{Worked on the “Arçelik Digital Home Energy” project in a collaborative effort with DAI-Labor at the Technical University of Berlin under the supervision of \href{https://www.linkedin.com/in/prof-dr-dr-h-c-sahin-albayrak-65452a1/}{\color{blue}Prof. Dr. Şahin Albayrak}.}
-            \resumeItem{Simulated discovery, pairing, and data exchange processes using the EEBUS protocol suite with C\# and Go. Migrated the framework from Go to C++ in order to ensure future adaptability for smart home IoT devices.}
-            \resumeItem{Implemented the TLS protocol for secure data exchange using the X.509 standard and integrated multicast DNS for seamless communication to complement the development of SHIP and SPINE protocols.}
+            \resumeItem{Support baseboard management controller (BMC) on Ampere's platform (Mt.Jade); focusing on MegaRAC firmware, and response for
+            these features: dynamic fan control; sensor monitoring; manage CPLD (update firmware, get the user-code); PSU monitoring; log warning
+            critical events from sensors, CPU, peripheral devices. Support FAE to verify the BMC features on a new platform; analyze issues that are
+            reported by FAE team or ODM, maintain a robot system to find out the degraded bug}
+            \resumeItemListStart
+              \resumeItem{Modify source code for specific requests from customers: LED behavior for Ethernet port, IPMI command for Ampere platform}
+              \resumeItem{Fix unwilling issues on the Ampere platform}
+              \resumeItem{Work with industry standards likes IPMI 2.0, PmBus, etc which relates to sensor monitoring.}
+            \resumeItemListEnd
         \resumeItemListEnd
-
-    % \resumeSubheading
-      % {Scale AI}{San Francisco, California, United States (Remote)}
-      % {Prompt Engineer}{Mar 2023 \textbf{--} Sep 2023, Freelance}
-        % \resumeItemListStart
-            % \resumeItem{Crafted elaborate Turkish prompts for various generative AI tasks. Tailored prompts using well-defined formats such as natural language questions and structured inputs based on the task's domain to fine-tune the LLM, improving the chatbot's responses and enhancing overall performance.}
-            % \resumeItem{Provided user feedback by reviewing and scoring the chatbot's responses to ensure they align with intended chatbot behaviors and the chatbot produces accurate and contextually appropriate responses to given prompts.}
-            % \resumeItem{Engaged in collaborative meetings with cross-functional teams and project coordinators, actively seeking guidance, addressing queries, and collectively brainstorming strategies to generate higher-quality prompts.}
-        % \resumeItemListEnd
+    \vspace{7pt}
 
     \resumeSubheading
-      {Max Planck Institute for Intelligent Systems}{Stuttgart, Baden\textbf{-}Württemberg, Germany}
-      {Undergraduate Researcher}{Jun 2022 \textbf{--} Aug 2022, Internship}
+      {Ho Chi Minh City University of Technology (HCMCUT)}{Ho Chi Minh, Vietnam (Onsite)}
+      {Teaching assistant}{June 2019 \textbf{--} March 2020, Full-time}
         \resumeItemListStart
-            \resumeItem{Engaged in collaborative research within the Robotics, Collectives and Learning subgroup at the Physical Intelligence Department with Ph.D. students \href{https://www.linkedin.com/in/sinan-ozgun-demir-981311129/}{\color{blue}Sinan Özgün Demir} and \href{https://www.linkedin.com/in/alpkaracakol/}{\color{blue}Alp Can Karacakol} on a project about 3D printing and heat-assisted magnetic programming of soft machines under the supervision of \href{https://www.linkedin.com/in/metin-sitti-0a8a712/}{\color{blue}Prof. Dr. Metin Sitti}.}
-            \resumeItem{Optimized a C++ ROS package for real-time conversion of 3D motion controller events to ROS messages, achieving high-frequency and buffer-free synchronization.}
-            \resumeItem{Developed an Arduino Mega driver to activate a laser and pressure regulator, for monitoring coil temperatures and PID tuning to control the coil currents. Established a robust ROS-Arduino communication network by integrating ROSSerial and handshaking to simulate a 3D printing and magnetic programming process with Python.}
-            \resumeItem{Designed the project's system and software architecture, flowchart, and state machine diagram. Expanded G-code capabilities by incorporating spherical coordinates to specify the direction of magnetization for shape morphing.}
+            \resumeItem{Research the RISC-V architecture under the supervision of \href{mailto:linhtran@hcmut.edu.vn}{\color{blue}PhD. Tran Hoang Linh}}
+            \resumeItem{Response for laboratory's tasks under the supervision of \href{mailto:BUIQUOCBAO@hcmut.edu.vn}{\color{blue}Ms.Eng Bui Quoc Bao}}
+            \resumeItem{Co-operate with local companies to apply the technology on their products: L.E.D driver, Smart home devices}
         \resumeItemListEnd
-    
-    \resumeSubheading
-      {Nanonetworking Research Group, Boğaziçi University}{Istanbul, Turkey}
-      {Undergraduate Researcher}{Oct 2021 \textbf{--} Jun 2022, Part-time}
-        \resumeItemListStart
-            \resumeItem{Worked on the “Design and Implementation of Molecular Communication Systems Using Index Modulation” project under the supervision of \href{https://www.linkedin.com/in/alipusane/}{\color{blue}Prof. Dr. Ali Emre Pusane}.}
-            \resumeItem{Simulated the Brownian motion of molecules in a SISO MCvD system and predicted simulation parameters such as receiver radius, diffusion coefficient, and transmitter-receiver distance using CNNs with Keras and TensorFlow.}
-            \resumeItem{Plotted the arrival of molecules per symbol duration in a SISO MCvD system using Binomial, Poisson, and Gaussian model approximations with MATLAB.}
-            \resumeItem{Ran Monte Carlo simulations of the Gaussian model to encode and decode randomized binary sequences in a SISO MCvD system using BCSK modulation technique and calculated the bit error rate on Z-channel.}
-        \resumeItemListEnd
+    \vspace{7pt}
 
     % \vspace{20pt}
     \resumeSubheading
-      {SESTEK Speech Enabled Software Technologies}{Istanbul, Turkey}
-      {AI Research and Development Intern}{Jan 2022 \textbf{--} Feb 2022, Internship}
+      {2KLIC Holdings Inc}{Ho Chi Minh, Vietnam (Onsite)}
+      {Platform Engineer}{March 2018  \textbf{--} December 2018, Internship}
         \resumeItemListStart
-            \resumeItem{Executed diverse NLP tasks, including NER, POS tagging, sentiment analysis, text classification, and extractive and generative QA using transformers and Hugging Face libraries. Conducted a thorough literature review on information retrieval and reading comprehension to stay updated on the state-of-the-art ML models.}
-            \resumeItem{Developed a generative QA system with dense passage retrieval (DPR) and retrieval-augmented generation (RAG) techniques using the Haystack framework and PyTorch.}
-            \resumeItem{Worked on a Turkish open-domain QA system made by fine-tuning BERTurk and XLM-Roberta models. Tabularized exact match and F1 scores derived from DeepMind's XQuAD and various Turkish data sets.}
+            \resumeItem{Being familiar with Linux environment and shell scripts}
+            \resumeItem{Being familiar with an embedded product manufacturing process}
+            \resumeItem{Apply Long Range (LoRa) technology for smart agriculture}
+            \resumeItem{Modify peripheral's driver for embedded computer RK328x SoC.}
         \resumeItemListEnd
-    
-    % \resumeSubheading
-      % {Ankara Metropolitan Municipality}{Ankara, Turkey}
-      % {SCADA Engineering Intern}{Aug 2021 \textbf{--} Sep 2021, Internship}
-        % \resumeItemListStart
-            % \resumeItem{Designed GSM/GPRS-based electrical control panels that are connected to local water pump automation systems. Pump station panels use digital output data received from the SCADA control center via RF transmission to control valves and pumps. Tank station panels are charged from the PV system and refill water tanks by signaling the pump station panel when the float switch is activated.}
-            % \resumeItem{Implemented motor control circuits by reading their PLC ladder diagrams and analyzed the EPLAN project documentation, HMI, and hardware components of an RTU panel.}
-        % \resumeItemListEnd
+    \vspace{7pt}
 
-    % \resumeSubheading
-      % {Meteksan Defense Industry Inc.}{Ankara, Turkey}
-      % {Analog Design Engineering Intern}{Jul 2021 \textbf{--} Aug 2021, Internship}
-        % \resumeItemListStart
-            % \resumeItem{Designed and simulated numerous analog circuits such as voltage-mode controlled buck converter, phase-shifted full-bridge isolated DC-DC converter, and EMI filters with LTspice. Integrated these circuits and implemented a 320 W power distribution unit to be used in a radar system's power circuit board.}
-            % \resumeItem{Researched real-world compatible electronic components to be used in such circuits including GaNFETs, high-side gate drivers, and Schottky diodes.}
-            % \resumeItem{Assembled PCBs of both common and differential mode filters and used VNA Bode 100 to measure the cut-off frequencies.}
-        % \resumeItemListEnd
-    
   \resumeSubHeadingListEnd
 
 
